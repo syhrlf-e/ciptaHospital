@@ -951,10 +951,6 @@ body {
     object-fit: cover;
   }
 
-  .fasilitas-terbaik .bagian-kanan {
-    /* margin-left: 20px; */
-  }
-
   .bagian-kanan > .foto-tambahan {
     margin-top: 30px;
     display: flex;
