@@ -665,7 +665,9 @@ body {
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
   }
 
   .navbar .menu {
