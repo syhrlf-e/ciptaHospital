@@ -11,6 +11,20 @@ document.querySelectorAll("#menuMobile a").forEach((link) => {
   });
 });
 
+document.querySelectorAll("#scrollKeTentangKami").forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+      duration: 1.2,
+      scrollTo: {
+        y: "#tentang-kami",
+        offsetY: 15,
+      },
+      ease: "power2.out",
+    });
+  });
+});
+
 document.querySelectorAll("#scrollKeLayanan").forEach((btn) => {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -72,6 +86,22 @@ gsap.to(".card-2", {
 gsap.to(".card-3", {
   y: -12,
   duration: 2,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
+
+gsap.to(".bef7", {
+  x: -1000,
+  duration: 5,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
+
+gsap.to(".bef8", {
+  x: -1000,
+  duration: 7,
   repeat: -1,
   yoyo: true,
   ease: "power1.inOut",
