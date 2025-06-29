@@ -799,7 +799,7 @@ body {
     color: var(--font-color);
     background-color: rgba(245, 245, 245, 0.2);
     border: none;
-    padding: 0.31rem 1.25rem;
+    padding: 0.31rem 1.15rem;
     border-radius: 3.13rem;
     border: 0.06rem solid rgb(158, 158, 158);
     margin-top: 6.87rem;
@@ -1056,3 +1056,4 @@ body {
     margin-top: 30px;
   }
 }
+
