@@ -67,6 +67,15 @@ document.querySelectorAll(".scrollKeKontak").forEach((btn) => {
   });
 });
 
+function fiturBelumTersedia() {
+  Swal.fire({
+    title: "Maaf Ya!",
+    text: "Fitur ini Masih dalam tahap pengembangan",
+    icon: "info",
+    confirmButtonText: "Okey",
+  });
+}
+
 gsap.to(".card-1", {
   y: -10,
   duration: 1,

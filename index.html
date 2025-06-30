@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RS Cipta Hospital</title>
-    <link rel="icon" href="./img/icon.svg" type="./img/svg+xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/icon.svg" type="./img/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/variables.css" />
     <link rel="stylesheet" href="./style/fonts.css" />
-    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/responsive.css" />
   </head>
   <body>
-
     <div class="container">
       <div class="blur-efek bef1"></div>
       <div class="blur-efek bef2"></div>
@@ -28,7 +33,15 @@
       <div class="blur-tentang-kami bef7"></div>
       <div class="blur-tentang-kami bef8"></div>
       <nav class="navbar">
-        <img src="./img/logo.svg" alt="logo" width="321" class="logo" data-aos="fade-down" data-aos-delay="100" style="cursor: pointer; "/>
+        <img
+          src="./img/logo.svg"
+          alt="logo"
+          width="321"
+          class="logo"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          style="cursor: pointer"
+        />
         <div class="menu" data-aos="fade-down" data-aos-delay="200">
           <ul>
             <li><a href="">Beranda</a></li>
@@ -37,8 +50,20 @@
             <li><a href="#" class="scrollKeKontak">Kontak</a></li>
           </ul>
         </div>
-        <button class="daftar" data-aos="fade-down" data-aos-delay="300">Daftar / Buat Janji</button>
-        <div class="hamburger" id="hamburger" data-aos="fade-down" data-aos-delay="300">
+        <button
+          onclick="fiturBelumTersedia()"
+          class="daftar"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          Daftar / Buat Janji
+        </button>
+        <div
+          class="hamburger"
+          id="hamburger"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           <i class="fa-solid fa-bars"></i>
         </div>
         <div class="menu-mobile" id="menuMobile">
@@ -54,230 +79,392 @@
       <main>
         <div class="beranda">
           <div class="hero-text">
-            <h1 data-aos="fade-down" data-aos-delay="300">Pelayanan Kesehatan</h1>
-            <h1 class="judul" data-aos="fade-down"data-aos-delay="350">Bertaraf Internasional, Untuk Semua Kalangan</h1>
+            <h1 data-aos="fade-down" data-aos-delay="300">
+              Pelayanan Kesehatan
+            </h1>
+            <h1 class="judul" data-aos="fade-down" data-aos-delay="350">
+              Bertaraf Internasional, Untuk Semua Kalangan
+            </h1>
             <h3 class="sub-text" data-aos="fade-down" data-aos-delay="400">
               Ribuan pasien telah mempercayakan kesehatannya kepada kami, Anda
               juga bisa
             </h3>
-            <button id="scrollKeTentangKami" class="lihat-selengkapnya" data-aos="fade-down" data-aos-delay="450">Lihat Selengkapnya <i class="fa-solid fa-arrow-right bg-icon"></i></button>
+            <button
+              id="scrollKeTentangKami"
+              class="lihat-selengkapnya"
+              data-aos="fade-down"
+              data-aos-delay="450"
+            >
+              Lihat Selengkapnya <i class="fa-solid fa-arrow-right bg-icon"></i>
+            </button>
           </div>
           <div class="testimoni-container">
             <div class="testimoni-card card-1">
               <div class="foto">
-                <img src="./img/ucupKarung.jpg" alt="" width="100px" height="100px">
+                <img
+                  src="./img/ucupKarung.jpg"
+                  alt=""
+                  width="100px"
+                  height="100px"
+                />
               </div>
               <div class="komentar">
                 <h3 class="nama-komentar">Ucup Karung</h3>
-                <p>Dokternya baik, terutama dokter tirta </p>
-                <p class="bintang"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                <p>Dokternya baik, terutama dokter tirta</p>
+                <p class="bintang">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
             <div class="testimoni-card card-2">
               <div class="foto">
-                <img src="./img/asepGarpu.jpg" alt="" width="100px" height="100px">
+                <img
+                  src="./img/asepGarpu.jpg"
+                  alt=""
+                  width="100px"
+                  height="100px"
+                />
               </div>
               <div class="komentar">
                 <h3 class="nama-komentar">Asep Garpu</h3>
                 <p>Pelayanan bagus banget, Mantap pokonya</p>
-                <p class="bintang"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                <p class="bintang">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
             <div class="testimoni-card card-3">
               <div class="foto">
-                <img src="./img/udinMangkok.jpg" alt="" width="70px" height="70px">
+                <img
+                  src="./img/udinMangkok.jpg"
+                  alt=""
+                  width="70px"
+                  height="70px"
+                />
               </div>
               <div class="komentar">
                 <h3 class="nama-komentar">Udin Mangkok</h3>
                 <p>pokonya terbaik bubat dokter reisa, cantik banget</p>
-                <p class="bintang"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                <p class="bintang">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
-            </div>
-            <div class="container-tentang-kami" id="tentang-kami">
-              <div class="kami-hadir">
-                <div class="bagian-kiri">
-                  <button class="btn-layanan btn-tentang-kami " data-aos="fade-up">Tentang Kami <i class="fa-solid fa-angles-down"></i></button>
-                  <h1>Kami Hadir Untuk Anda</h1>
-                  <p>Kami menghadirkan layanan kesehatan yang tidak hanya mengandalkan keunggulan teknologi dan tenaga medis profesional, tetapi juga memprioritaskan sentuhan empati dalam setiap proses perawatan. Setiap pasien adalah individu istimewa yang berhak mendapatkan pelayanan terbaik, karena bagi kami, kesehatan Anda adalah prioritas utama.</p>
-                </div>
-                <div class="bagian-kanan">
-                  <img src="./img/bg-daftar.png" alt="">
-                </div>
-              </div>
-              <div class="fasilitas-terbaik">
-                <div class="bagian-kiri">
-                  <img src="./img/lobby.jpg" alt="">
-                </div>
-                <div class="bagian-kanan">
-                  <h1>Fasilitas Terbaik</h1>
-                  <p>Kami menyediakan fasilitas lengkap dan modern, mulai dari ruang rawat inap eksklusif, unit gawat darurat berteknologi tinggi, hingga ruang operasi dengan sistem digital terkini.</p>
-                  <div class="foto-tambahan">
-                    <img src="./img/fasilitas-1.jpeg" alt="">
-                    <img src="./img/f2.jpg" alt="">
-                    <img src="./img/fasilitas-3.webp" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          <section id="layanan" class="layanan">
-                <div class="layanan-header" >
-                  <button class="btn-layanan" data-aos="fade-up">Pelayanan Kami <i class="fa-solid fa-angles-down"></i></button>
-                </div>
-                <div class="layanan-grid">
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="350">
-                    <img src="/img/rawatJalan.jpg" alt="Rawat Jalan">
-                    <div class="overlay">Rawat Jalan <span class="panah">&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="400">
-                    <img src="./img/rawatInap.jpg" alt="Rawat Inap">
-                    <div class="overlay">Rawat Inap <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="450">
-                    <img src="./img/igd.webp" alt="IGD / UGD 24 JAM">
-                    <div class="overlay">IGD / UGD 24 JAM <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item tall" data-aos="fade-up"data-aos-delay="500">
-                    <img src="./img/apotek.jpg" alt="Apotek">
-                    <div class="overlay">Apotek <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item tall" data-aos="fade-up"data-aos-delay="550">
-                    <img src="./img/mcu.jpg" alt="Medical Check-Up">
-                    <div class="overlay">Medical Check-Up <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="600">
-                    <img src="./img/labo.jpeg" alt="Laboratorium">
-                    <div class="overlay">Laboratorium <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="650">
-                    <img src="./img/klinikSpesialis.jpg" alt="Klinik Spesialis">
-                    <div class="overlay">Klinik Spesialis <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="700">
-                    <img src="./img/radiologi.jpg" alt="Radiologi & Imaging">
-                    <div class="overlay">Radiologi & Imaging <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="750">
-                    <img src="./img/vaksinasi.jpg" alt="Vaksinasi">
-                    <div class="overlay">Vaksinasi <span>&rarr;</span></div>
-                  </article>
-                  <article class="layanan-item" data-aos="fade-up"data-aos-delay="850">
-                    <img src="./img/rehab.jpg" alt="Rehabilitasi Medis">
-                    <div class="overlay">Rehabilitasi Medis <span>&rarr;</span></div>
-                  </article>
-                </div>
-            </section>
-            <section id="dokter" class="dokter-section">
-                <button class="dokter-btn">Dokter Kami <i class="fa-solid fa-angles-down"></i></button>
-              <div class="dokter-grid">
-                <div class="dokter-item nama-dokter" data-aos="fade-right">
-                  <h3>DOKTER</h3>
-                  <p class="gelar-dokter">dr. Tirta Mandira Hudhi</p>
-                  <em>"kalo dibilangin jangan ngeyel"</em>
-                  <button class="detail-tirta-btn">Detail Dokter <i class="fa-solid fa-arrow-right bg-icon-dokter"></i></button>
-                </div>
-                <div class="dokter-item foto-tirta" data-aos="fade-up">
-                  <img src="./img/tirta.webp" class="dokter-img" alt="dr Tirta">
-                </div>
-                <div class="dokter-item deskripsi-tirta" data-aos="fade-left">
-                  <h4>SPESIALIS PENYAKIT DALAM</h4>
-                  <p class="desk">dr. Tirta adalah dokter spesialis penyakit dalam dengan pengalaman lebih dari 10 tahun menangani kasus medis dewasa, mulai dari gangguan metabolik, infeksi, hingga penyakit kronis.</p>
-                  <p class="rating">Rating 5/5 (400 ulasan)</p>
-                  <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                </div>
-                <div class="dokter-item foto-boyke" data-aos="fade-right">
-                  <img src="./img/boyke.jpg" class="dokter-img" alt="dr Boyke">
-                </div>
-                <div class="dokter-item deskripsi-boyke" data-aos="fade-left">
-                  <h3>DOKTER</h3>
-                  <p class="gelar-dokter">dr. H. Boyke Dian Nugraha, SpOG, MARS</p>
-                  <em>"Setiap ibu dan calon bayi berhak mendapat perhatian terbaik."</em>
-                  <button class="detail-boyke-btn">Detail Dokter <i class="fa-solid fa-arrow-right bg-icon-dokter"></i></button>
-                  <p class="rating">Rating 5/5 (210 ulasan)</p>
-                  <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                </div>
-                <div class="dokter-item nama-reisa" data-aos="fade-right">
-                  <h3>DOKTER</h3>
-                  <p class="gelar-dokter">dr. Reisa Broto Asmoro</p>
-                  <em>"menjaga masa depan anak."</em>
-                  <button class="detail-reisa-btn">Detail Dokter <i class="fa-solid fa-arrow-right bg-icon-dokter"></i></button>
-                </div>
-                <div class="dokter-item foto-reisa" data-aos="fade-up">
-                  <img src="./img/reisa.webp" class="dokter-img" alt="dr Reisa">
-                </div>
-                <div class="dokter-item deskripsi-reisa"data-aos="fade-left">
-                  <h4>SPESIALIS ANAK</h4>
-                  <p class="desk">dr. Reisa adalah dokter spesialis anak yang fokus pada perawatan kesehatan bayi, balita, dan anak-anak hingga remaja.</p>
-                  <p class="rating">Rating 5/5 (772 ulasan)</p>
-                  <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                </div>
-              </div>
-            </section>
-            </section>
           </div>
-            <div id="kontak" class="container-kontak">
-    <h2>Kontak Kami</h2>
-    <div class="kontak-wrapper">
-      <div class="info-kontak">
-        <b>Alamat</b>
-        <p>Jl. Sehat Sentosa Abadi Selamanaya No. 347, Jakarta Pusat, Indonesia</p>
-        <b>Telepon</b>
-        <p>(021) 4347-1338</p>
-        <b>Jam Operasional</b>
-        <p>Senin–Minggu, 24 Jam (UGD) / Senin–Sabtu, 08.00–20.00 (klinik)</p>
-        <b>Email</b>
-        <p>info@rsciptasehathospital.cow</p>
-      </div>
+          <div class="container-tentang-kami" id="tentang-kami">
+            <div class="kami-hadir">
+              <div class="bagian-kiri">
+                <button class="btn-layanan btn-tentang-kami" data-aos="fade-up">
+                  Tentang Kami <i class="fa-solid fa-angles-down"></i>
+                </button>
+                <h1>Kami Hadir Untuk Anda</h1>
+                <p>
+                  Kami menghadirkan layanan kesehatan yang tidak hanya
+                  mengandalkan keunggulan teknologi dan tenaga medis
+                  profesional, tetapi juga memprioritaskan sentuhan empati dalam
+                  setiap proses perawatan. Setiap pasien adalah individu
+                  istimewa yang berhak mendapatkan pelayanan terbaik, karena
+                  bagi kami, kesehatan Anda adalah prioritas utama.
+                </p>
+              </div>
+              <div class="bagian-kanan">
+                <img src="./img/bg-daftar.png" alt="" />
+              </div>
+            </div>
+            <div class="fasilitas-terbaik">
+              <div class="bagian-kiri">
+                <img src="./img/lobby.jpg" alt="" />
+              </div>
+              <div class="bagian-kanan">
+                <h1>Fasilitas Terbaik</h1>
+                <p>
+                  Kami menyediakan fasilitas lengkap dan modern, mulai dari
+                  ruang rawat inap eksklusif, unit gawat darurat berteknologi
+                  tinggi, hingga ruang operasi dengan sistem digital terkini.
+                </p>
+                <div class="foto-tambahan">
+                  <img src="./img/fasilitas-1.jpeg" alt="" />
+                  <img src="./img/f2.jpg" alt="" />
+                  <img src="./img/fasilitas-3.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <section id="layanan" class="layanan">
+            <div class="layanan-header">
+              <button class="btn-layanan" data-aos="fade-up">
+                Pelayanan Kami <i class="fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+            <div class="layanan-grid">
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="350"
+              >
+                <img src="/img/rawatJalan.jpg" alt="Rawat Jalan" />
+                <div class="overlay">
+                  Rawat Jalan <span class="panah">&rarr;</span>
+                </div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <img src="./img/rawatInap.jpg" alt="Rawat Inap" />
+                <div class="overlay">Rawat Inap <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <img src="./img/igd.webp" alt="IGD / UGD 24 JAM" />
+                <div class="overlay">IGD / UGD 24 JAM <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item tall"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <img src="./img/apotek.jpg" alt="Apotek" />
+                <div class="overlay">Apotek <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item tall"
+                data-aos="fade-up"
+                data-aos-delay="550"
+              >
+                <img src="./img/mcu.jpg" alt="Medical Check-Up" />
+                <div class="overlay">Medical Check-Up <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <img src="./img/labo.jpeg" alt="Laboratorium" />
+                <div class="overlay">Laboratorium <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="650"
+              >
+                <img src="./img/klinikSpesialis.jpg" alt="Klinik Spesialis" />
+                <div class="overlay">Klinik Spesialis <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="700"
+              >
+                <img src="./img/radiologi.jpg" alt="Radiologi & Imaging" />
+                <div class="overlay">
+                  Radiologi & Imaging <span>&rarr;</span>
+                </div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="750"
+              >
+                <img src="./img/vaksinasi.jpg" alt="Vaksinasi" />
+                <div class="overlay">Vaksinasi <span>&rarr;</span></div>
+              </article>
+              <article
+                class="layanan-item"
+                data-aos="fade-up"
+                data-aos-delay="850"
+              >
+                <img src="./img/rehab.jpg" alt="Rehabilitasi Medis" />
+                <div class="overlay">
+                  Rehabilitasi Medis <span>&rarr;</span>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section id="dokter" class="dokter-section">
+            <button class="dokter-btn">
+              Dokter Kami <i class="fa-solid fa-angles-down"></i>
+            </button>
+            <div class="dokter-grid">
+              <div class="dokter-item nama-dokter" data-aos="fade-right">
+                <h3>DOKTER</h3>
+                <p class="gelar-dokter">dr. Tirta Mandira Hudhi</p>
+                <em>"kalo dibilangin jangan ngeyel"</em>
+                <button class="detail-tirta-btn">
+                  Detail Dokter
+                  <i class="fa-solid fa-arrow-right bg-icon-dokter"></i>
+                </button>
+              </div>
+              <div class="dokter-item foto-tirta" data-aos="fade-up">
+                <img src="./img/tirta.webp" class="dokter-img" alt="dr Tirta" />
+              </div>
+              <div class="dokter-item deskripsi-tirta" data-aos="fade-left">
+                <h4>SPESIALIS PENYAKIT DALAM</h4>
+                <p class="desk">
+                  dr. Tirta adalah dokter spesialis penyakit dalam dengan
+                  pengalaman lebih dari 10 tahun menangani kasus medis dewasa,
+                  mulai dari gangguan metabolik, infeksi, hingga penyakit
+                  kronis.
+                </p>
+                <p class="rating">Rating 5/5 (400 ulasan)</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="dokter-item foto-boyke" data-aos="fade-right">
+                <img src="./img/boyke.jpg" class="dokter-img" alt="dr Boyke" />
+              </div>
+              <div class="dokter-item deskripsi-boyke" data-aos="fade-left">
+                <h3>DOKTER</h3>
+                <p class="gelar-dokter">
+                  dr. H. Boyke Dian Nugraha, SpOG, MARS
+                </p>
+                <em
+                  >"Setiap ibu dan calon bayi berhak mendapat perhatian
+                  terbaik."</em
+                >
+                <button class="detail-boyke-btn">
+                  Detail Dokter
+                  <i class="fa-solid fa-arrow-right bg-icon-dokter"></i>
+                </button>
+                <p class="rating">Rating 5/5 (210 ulasan)</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="dokter-item nama-reisa" data-aos="fade-right">
+                <h3>DOKTER</h3>
+                <p class="gelar-dokter">dr. Reisa Broto Asmoro</p>
+                <em>"menjaga masa depan anak."</em>
+                <button class="detail-reisa-btn">
+                  Detail Dokter
+                  <i class="fa-solid fa-arrow-right bg-icon-dokter"></i>
+                </button>
+              </div>
+              <div class="dokter-item foto-reisa" data-aos="fade-up">
+                <img src="./img/reisa.webp" class="dokter-img" alt="dr Reisa" />
+              </div>
+              <div class="dokter-item deskripsi-reisa" data-aos="fade-left">
+                <h4>SPESIALIS ANAK</h4>
+                <p class="desk">
+                  dr. Reisa adalah dokter spesialis anak yang fokus pada
+                  perawatan kesehatan bayi, balita, dan anak-anak hingga remaja.
+                </p>
+                <p class="rating">Rating 5/5 (772 ulasan)</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div id="kontak" class="container-kontak">
+            <h2>Kontak Kami</h2>
+            <div class="kontak-wrapper">
+              <div class="info-kontak">
+                <b>Alamat</b>
+                <p>
+                  Jl. Sehat Sentosa Abadi Selamanaya No. 347, Jakarta Pusat,
+                  Indonesia
+                </p>
+                <b>Telepon</b>
+                <p>(021) 4347-1338</p>
+                <b>Jam Operasional</b>
+                <p>
+                  Senin–Minggu, 24 Jam (UGD) / Senin–Sabtu, 08.00–20.00 (klinik)
+                </p>
+                <b>Email</b>
+                <p>info@rsciptasehathospital.cow</p>
+              </div>
 
-      <div class="form-kontak">
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" placeholder="ex : ucup karung" />
+              <div class="form-kontak">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="ex : ucup karung" />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="ucup_karung@gmail.cow" />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="ucup_karung@gmail.cow"
+                />
 
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" rows="5" placeholder="Masukan pesan anda"></textarea>
+                <label for="pesan">Pesan</label>
+                <textarea
+                  id="pesan"
+                  rows="5"
+                  placeholder="Masukan pesan anda"
+                ></textarea>
 
-        <button type="submit">Kirim</button>
-      </div>
-    </div>
-  </div>
+                <button type="submit">Kirim</button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-left">
-          <img src="./img/logo.svg" alt="Logo Cipta Hospital" class="logo-footer" />
-          <p class="desc">
-            Pelayanan Kesehatan<br />
-            Bertaraf Internasional, Untuk Semua Kalangan
-          </p>
-          <p class="follow-title">Ikuti Kami</p>
-          <div class="social-link">
-            <i class="fab fa-instagram"></i>
-            <span>rs.ciptahospital_official</span>
+        <div class="footer-container">
+          <div class="footer-left">
+            <img
+              src="./img/logo.svg"
+              alt="Logo Cipta Hospital"
+              class="logo-footer"
+            />
+            <p class="desc">
+              Pelayanan Kesehatan<br />
+              Bertaraf Internasional, Untuk Semua Kalangan
+            </p>
+            <p class="follow-title">Ikuti Kami</p>
+            <div class="social-link">
+              <i class="fab fa-instagram"></i>
+              <span>rs.ciptahospital_official</span>
+            </div>
+            <div class="social-link">
+              <i class="fab fa-facebook"></i>
+              <span>ciptahospital.official</span>
+            </div>
           </div>
-          <div class="social-link">
-            <i class="fab fa-facebook"></i>
-            <span>ciptahospital.official</span>
+          <div class="footer-right">
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Pelayanan</a></li>
+              <li><a href="#">Dokter</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
           </div>
         </div>
-        <div class="footer-right">
-          <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Pelayanan</a></li>
-            <li><a href="#">Dokter</a></li>
-            <li><a href="#">Kontak</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <i class="fa-regular fa-copyright"></i>
-        2025 RS Cipta Hospital. All rights reserved. || Syhrl.Fnd17
-      </div>
-    </footer>
+        <div class="footer-bottom">
+          <i class="fa-regular fa-copyright"></i>
+          2025 RS Cipta Hospital. All rights reserved. || Syhrl.Fnd17
+        </div>
+      </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -285,6 +472,6 @@
         once: true,
       });
     </script>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
   </body>
 </html>
