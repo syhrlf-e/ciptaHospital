@@ -1,0 +1,452 @@
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .menu-mobile {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: left 0.3s ease;
+    padding: 100px 20px;
+    z-index: 1000;
+  }
+
+  .menu-mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-mobile ul li {
+    margin-bottom: 24px;
+  }
+
+  .menu-mobile ul li a {
+    color: var(--font-color);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--font-primary);
+  }
+
+  .daftar-mobile {
+    width: auto;
+    height: 3rem;
+    font-family: var(--font-primary);
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--font-color);
+    background-color: rgba(245, 245, 245, 0.2);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid rgb(158, 158, 158);
+    margin-top: 50px;
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+  }
+
+  .menu-mobile.active {
+    left: 0;
+  }
+
+  .navbar {
+    align-items: center;
+    align-content: center;
+  }
+
+  .daftar {
+    margin-right: -25rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: none;
+  }
+
+  .hero-text {
+    font-family: var(--font-primary);
+    color: var(--font-color);
+    font-size: 0.97rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .hero-text h3 {
+    margin-top: 0.87rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 0.87rem;
+  }
+
+  .lihat-selengkapnya {
+    width: auto;
+    height: 3rem;
+    font-family: var(--font-primary);
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--font-color);
+    background-color: rgba(245, 245, 245, 0.2);
+    border: none;
+    padding: 0.31rem 0.62rem;
+    border-radius: 3.12rem;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    margin-top: 3.12rem;
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+  }
+
+  .testimoni-container {
+    gap: 10px;
+    margin: 3.12rem 0 1.87rem 0;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimoni-card {
+    transform: scale(0.8);
+  }
+
+  .btn-layanan,
+  .dokter-btn {
+    width: auto;
+    height: 3rem;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--font-color);
+    background-color: rgba(245, 245, 245, 0.2);
+    border: none;
+    padding: 0.31rem 1.15rem;
+    border-radius: 3.13rem;
+    border: 0.06rem solid rgb(158, 158, 158);
+    margin-top: 6.87rem;
+    margin-bottom: 3.13rem;
+    backdrop-filter: blur(30px);
+  }
+
+  .btn-tentang-kami {
+    margin: 0 0 1.87rem 0;
+  }
+
+  .kami-hadir,
+  .fasilitas-terbaik {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kami-hadir .bagian-kiri {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .kami-hadir .bagian-kanan img,
+  .fasilitas-terbaik .bagian-kiri img {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0.93rem;
+  }
+
+  .fasilitas-terbaik {
+    margin-top: 50px;
+  }
+
+  .fasilitas-terbaik > .bagian-kanan {
+    margin: 0;
+  }
+
+  .bagian-kiri > h1,
+  .fasilitas-terbaik .bagian-kanan h1 {
+    font-size: 1.87rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bagian-kiri > p,
+  .fasilitas-terbaik .bagian-kanan p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+
+  .bagian-kanan > .foto-tambahan {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .foto-tambahan img {
+    width: 115px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.37rem, 1fr));
+    grid-auto-rows: 12.37rem;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .overlay {
+    font-family: var(--font-primary);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
+  }
+
+  .dokter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.37rem, 1fr));
+    grid-auto-rows: 31.25rem;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .nama-dokter > h3,
+  .deskripsi-boyke > h3,
+  .nama-reisa > h3 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: var(--font-color);
+  }
+
+  .nama-dokter > .gelar-dokter,
+  .deskripsi-boyke > .gelar-dokter,
+  .nama-reisa > .gelar-dokter {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--font-color);
+  }
+
+  .nama-dokter > em,
+  .deskripsi-boyke > em,
+  .nama-reisa > em {
+    font-family: var(--font-primary);
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 0.87rem;
+    margin: 15px 0;
+  }
+
+  .deskripsi-tirta > h4,
+  .deskripsi-reisa > h4 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--font-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .deskripsi-tirta > .desk,
+  .deskripsi-reisa > .desk {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--font-color);
+  }
+
+  .deskripsi-boyke > .desk-boyke {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--font-color);
+  }
+
+  .deskripsi-tirta > .rating,
+  .deskripsi-reisa > .rating {
+    margin-top: 50px;
+    font-family: var(--font-primary);
+    color: var(--font-color);
+  }
+  .deskripsi-boyke > .rating {
+    font-family: var(--font-primary);
+    color: var(--font-color);
+  }
+
+  .dokter-item {
+    margin-bottom: 60px;
+  }
+
+  .container-kontak {
+    padding: 10px;
+  }
+
+  .container-kontak > h2 {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+
+  .info-kontak > b {
+    font-size: 1rem;
+  }
+
+  .info-kontak > p {
+    font-size: 0.87rem;
+  }
+
+  .kontak-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .form-kontak {
+    transform: scale(0.9);
+  }
+
+  .form-kontak > label {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .logo-footer {
+    height: 140px;
+    margin-top: -40px;
+    margin-left: 0;
+  }
+
+  .footer-right ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    background-color: rgba(224, 224, 224, 0.2);
+    backdrop-filter: blur(100px);
+    padding: 40px 20px 20px 20px;
+    color: #1a2d5a;
+    width: 100%;
+    font-family: var(--font-primary);
+    color: var(--font-color);
+  }
+
+  .footer-container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 100px;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .logo-footer {
+    margin-top: -60px;
+    margin-left: -50px;
+    height: 210px;
+  }
+
+  .desc {
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: -60px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .follow-title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .fa-facebook,
+  .fa-instagram {
+    padding-right: 20px;
+    font-size: 20px;
+    color: var(--font-color);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .social-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .footer-right ul {
+    list-style: none;
+  }
+
+  .footer-right ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-right ul li a {
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 500;
+  }
+
+  .footer-bottom {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-align: center;
+    color: var(--font-color);
+    opacity: 50%;
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+
+  .footer-right {
+    display: none;
+  }
+  .footer-bottom {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-align: center;
+    color: var(--font-color);
+    opacity: 50%;
+    font-size: 0.5rem;
+    margin-top: 30px;
+  }
+}
