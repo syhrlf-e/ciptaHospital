@@ -168,7 +168,7 @@
   }
 
   .fasilitas-terbaik {
-    margin-top: 50px;
+    margin-top: 1rem;
   }
 
   .fasilitas-terbaik > .bagian-kanan {
@@ -198,9 +198,7 @@
     width: 115px;
     border-radius: 5px;
   }
-}
 
-@media screen and (max-width: 1024px) {
   .layanan-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12.37rem, 1fr));
@@ -225,7 +223,6 @@
     align-items: center;
     z-index: 999999;
   }
-
   .dokter-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12.37rem, 1fr));
@@ -251,7 +248,9 @@
     font-size: 1rem;
     color: var(--font-color);
   }
+}
 
+@media screen and (max-width: 1024px) {
   .nama-dokter > em,
   .deskripsi-boyke > em,
   .nama-reisa > em {
