@@ -1,7 +1,9 @@
 const hamburger = document.getElementById("hamburger");
 const menuMobile = document.getElementById("menuMobile");
 
-hamburger.addEventListener("click", () => {
+// Toggle menu saat klik hamburger
+hamburger.addEventListener("click", (e) => {
+  e.stopPropagation();
   menuMobile.classList.toggle("active");
 });
 
@@ -9,6 +11,15 @@ document.querySelectorAll("#menuMobile a").forEach((link) => {
   link.addEventListener("click", () => {
     menuMobile.classList.remove("active");
   });
+});
+
+document.addEventListener("click", (e) => {
+  const isClickInsideMenu = menuMobile.contains(e.target);
+  const isClickOnHamburger = hamburger.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnHamburger) {
+    menuMobile.classList.remove("active");
+  }
 });
 
 document.querySelectorAll("#scrollKeTentangKami").forEach((btn) => {
