@@ -76,6 +76,15 @@ function fiturBelumTersedia() {
   });
 }
 
+function fiturTahapPengembangan() {
+  Swal.fire({
+    title: "Maaf Ya!",
+    text: "Fitur ini Masih dalam tahap pengembangan, Kami akan melakukan yang terbaik untuk anda",
+    icon: "info",
+    confirmButtonText: "Okey",
+  });
+}
+
 gsap.to(".card-1", {
   y: -10,
   duration: 1,
